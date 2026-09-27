@@ -1,0 +1,14 @@
+{
+  "budget": 1,
+  "seg_error_code": "E_NOT_ENOUGH_SEGMENTS",
+  "doc_error_code": "E_DUPLICATE_DOC",
+  "event_error_code": "E_BAD_EVENT",
+  "state": { "segs": [], "ledger": [], "applied": [] },
+  "events": [
+    { "id": 1, "kind": "index", "doc": "d1", "words": ["a", "b"] },
+    { "id": 2, "kind": "index", "doc": "d2", "words": ["b", "c"] },
+    { "id": 3, "kind": "merge" },
+    { "id": 4, "kind": "index", "doc": "d3", "words": ["a"] },
+    { "id": 5, "kind": "merge" }
+  ]
+}
